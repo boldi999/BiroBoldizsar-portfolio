@@ -78,7 +78,7 @@ li.gomb {
 .img-kontener {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
-  grid-gap: .3rem;
+  grid-gap: .1rem;
 }
 
 .valtozasnaplo {
