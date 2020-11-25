@@ -1,0 +1,88 @@
+body { font-family: Tahoma, Geneva, sans-serif; background-color: #fff; }
+img {border: 0; }
+h1 {font-size: 3rem; margin-bottom:-20px; margin-right: 5px;}
+h2 {font-size: 1.2rem; color: #fff; margin-right: 5px;}
+h3 {font-size: 1.8rem; font-family: "Courier New", Courier, monospace; color: #fff;}
+h4 {font-size: 1.3rem; font-family: "Courier New", Courier, monospace; color: #fff;border-bottom: 1px solid #fff; width: 70%}
+.fejlec { grid-area: fejlec; }
+.foo { grid-area: foo; }
+.menu { grid-area: menu; }
+.lablec { grid-area: lablec;}
+
+.kontener {
+  display: grid;
+  grid-template-areas:
+  "fejlec"
+  "menu"
+  "foo"
+  "lablec";
+  grid-template-colums: repeat(auto-fit, minmax(10rem, 1fr));
+  grid-gap: .1rem;
+  background-color: inherit;
+  padding: 5px;
+}
+
+.kontener .fejlec {
+  background-color: tomato;
+  text-align: right;
+  padding: 10px;
+  font-size: 30px;
+}
+.kontener .menu {
+	background-color: #fff;
+}
+.kontener .foo {
+	background-color: #ccc;
+	padding:10px 30px;
+	margin:0;
+}
+.kontener .lablec {
+	border-top:2px solid red;
+	background-color: tomato;
+	text-align:center;
+	font-size:80%;
+	padding: 10px 0;
+	margin:0;
+	color: #fff;
+}
+ul {
+    display: inline-block;
+    list-style-type: none;
+    padding-inline-start: 10px;
+}
+
+li.gomb {
+	display: inline-block;
+	border: 2px solid #000;
+	padding: 5px;
+	margin:5px;
+}
+.gomb a {text-decoration:none; color: #000;}
+.gomb:hover  {background-color: #000;cursor:pointer; color: #fff;}
+.gomb a:hover {color:#fff;}
+.gomb.aktiv {background-color: #000; color:#fff}
+.gomb.aktiv a {color: #fff;}
+.foo {line-height: 1.4rem;}
+.jomagam {float:left; padding: 0 10px 20px 0}
+.doboz {
+  width: 90%;
+  padding: 10px;
+  margin: 10px auto;
+  background-color: #fff;
+  -webkit-box-shadow: 6px 4px 7px -4px rgba(0,0,0,0.63);
+  -moz-box-shadow: 6px 4px 7px -4px rgba(0,0,0,0.63);
+	box-shadow: 6px 4px 7px -4px rgba(0,0,0,0.63);
+}
+.img-r { width: 100%;  height: auto; }
+
+.img-kontener {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(390px, 1fr));
+  grid-gap: .3rem;
+}
+
+.valtozasnaplo {
+	font-family: "Courier New", Courier, monospace;
+	line-height: 1.5rem;
+}
+
